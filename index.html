@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ab Nahi Toh Kab...</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#"><div class="logo"></div> </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#courses">Courses ▼</a>
+                    <div class="dropdown-content">
+                        <a href="#dsa">DSA with C++</a>
+                        <a href="#java">Java Programming</a>
+                        <a href="#web">Web Development</a>
+                        <a href="#aiml">AI/ML</a>
+                        <a href="#interview">Interview Prep</a>
+                        <a href="#aptitude">Aptitude</a>
+                    </div>
+                </li>
+                
+                <li><a href="#about">About Us</a></li>
+               
+            </ul>
+
+            <div class="nav-actions">
+                
+                <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+                <button class="btn btn-outline" id="login" onclick="loginModal()">Login</button>
+                <button class="btn btn-primary" id="signup" onclick="signupModal()">Sign Up</button>
+                <button class="btn btn-outline" id="logout" onclick="loModal()">Log-Out</button>
+            </div>
+
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Confused where to start your placement journey ?</h1>
+            <p>you are at the right place !</p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-primary">Start Learning Free</a>
+                <a href="#courses" class="btn btn-outline" style="background: white; color: var(--primary-color);">View All Courses</a>
+            </div>
+      
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="courses-section" id="courses">
+        <div class="section-header">
+            <h2>Our Course Categories</h2>
+            <p>Choose from our comprehensive placement-focused curriculum</p>
+        </div>
+        <div class="course-grid">
+            <div class="course-card" onclick="navigateToCourse('dsa')">
+                <div class="course-icon">💻</div>
+                <h3>DSA with C++</h3>
+                <p>Master data structures and algorithms with C++</p>
+                <a href="#" class="btn btn-primary cartbtn">Explore Course</a>
+            </div>
+            <div class="course-card" onclick="navigateToCourse('java')">
+                <div class="course-icon">☕</div>
+                <h3>Java Programming</h3>
+                <p>Complete Java from basics to advanced concepts</p>
+                <a href="#" class="btn btn-primary cartbtn">Explore Course</a>
+            </div>
+            <div class="course-card" onclick="navigateToCourse('web')">
+                <div class="course-icon">🌐</div>
+                <h3>Web Development</h3>
+                <p>Full-stack web development with modern technologies</p>
+                <a href="#" class="btn btn-primary cartbtn">Explore Course</a>
+            </div>
+            <div class="course-card" onclick="navigateToCourse('aiml')">
+                <div class="course-icon">🤖</div>
+                <h3>AI/ML</h3>
+                <p>Artificial Intelligence and Machine Learning fundamentals</p>
+                <a href="#" class="btn btn-primary cartbtn">Explore Course</a>
+            </div>
+            <div class="course-card" onclick="navigateToCourse('interview')">
+                <div class="course-icon">🎯</div>
+                <h3>Interview Preparation</h3>
+                <p>Ace technical and HR interview rounds</p>
+                <a href="#" class="btn btn-primary cartbtn">Explore Course</a>
+            </div>
+            <div class="course-card" onclick="navigateToCourse('aptitude')">
+                <div class="course-icon">📊</div>
+                <h3>Aptitude & Reasoning</h3>
+                <p>Quantitative, logical, and verbal aptitude</p>
+                <a href="#" class="btn btn-primary cartbtn">Explore Course</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="about">
+        <div class="section-header">
+            <h2>Build By Student, For Students </h2>
+            
+        </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon aditya"></div>
+                <h3>Aditya Kiran</h3>
+             <a href="https://www.linkedin.com/in/adityakiran0909/"> <div class="linkedin"></div> </a>  
+                
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon abhishek"></div>
+                <h3>Abhishek Kumar</h3>
+                <a href="https://www.linkedin.com/in/abhishek-kumar-b70160262/"> <div class="linkedin"></div> </a>  
+                
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon nishank"></div>
+                <h3>Nishank Kumar</h3>
+                <a href="https://www.linkedin.com/in/nishank-kumar-049735303/"> <div class="linkedin"></div> </a>  
+                
+            </div>
+        </div>
+    </section>
+
+    
+   
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#courses">All Courses</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#practice">Practice Tests</a></li>
+                    <li><a href="#placements">Placement Updates</a></li>
+                </ul>
+            </div>
+           
+            
+            <div class="footer-section">
+                <h4>Connect Us</h4>
+                <ul>
+                    <li><a href="#">📧 support@placementprep.com</a></li>
+                   
+        </div>
+       
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+      
